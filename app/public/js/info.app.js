@@ -7,7 +7,7 @@ var app = new Vue({
     userLast:'',
     userDOB:'',
     userAge:'',
-    userOrigin:'',
+    userCountry:'',
     userImgLarge:'',
     userImgThumb:''
     
@@ -27,10 +27,11 @@ var app = new Vue({
       this.userName = userData.name.first + " "+userData.name.last;
       this.userEmail = userData.email;
       this.userAge = userData.dob.age; 
+      this.userCountry = userData.location.country;
       this.userDOB = userData.dob.date[1] + "/" + userData.dob.date[2] + "/" + userData.dob.date[0] + userData.dob.date[1] + userData.dob.date[2] + userData.dob.date[3] ;
       this.userImgLarge = userData.picture.large;
       this.userImgThumb = userData.picture.thumbnail;
-      console.log('user country' +userData.location.country);
+     
     });
   }
 }

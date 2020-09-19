@@ -64,9 +64,10 @@
 <div class id='userProfile'>
 
         <h4> Name - {{ userName }}</h4>,
-  <h4> Email - {{ userEmail }}</h4>,
+  <h4> Email - <a href="malito:{{ userEmail }}">{{ userEmail}}</a></h4>,
   <h4> Age - {{ userAge }}</h4>,
   <h4>DOB - {{ userDOB}}</h4>
+  <h4>Country - {{ userCountry }}</h4>
   <a v-bind:href="userImgLarge">
 
     <img v-bind:src="userImgThumb">
