@@ -64,25 +64,27 @@
      
          
 <div class id='userProfile'>
-
+  <form method="get" v-on:submit.prevent="fetchUser">
   <h4> Name - {{ userName }}</h4>,
   <h4> Email - <a :href=" 'mailto:' + userEmail">{{ userEmail}}</a></h4>,
   <h4> Age - {{ userAge }}</h4>,
   <h4>DOB - {{ userDOB}}</h4>,
   <h4>Country - {{ userCountry }}</h4>
+
   <a v-bind:href="userImgLarge">
  
     <img v-bind:src="userImgThumb">
 
   </a>
+ <p> <button type="submit" value="Enter"> Enter </button> </p> <br>
+
 </div>
 
-<div>
+
   
-<form method="post" v-on:submit.prevent="fetchUser">
-<input type="submit" value="Enter">
+
+
   
-</div>
 
 
 
