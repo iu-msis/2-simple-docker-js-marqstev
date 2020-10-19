@@ -1,0 +1,14 @@
+{
+    "name": "hw7/ds-final-assignment",
+    "description": "A really hard assignment",
+    "license": "private",
+    "authors": [{
+        "name": "Marqis Stevenson"
+    }],
+    "require": {
+      "ramsey/uuid": "^4.1"
+    },
+    "autoload": {
+        "classmap": ["class/DbConnection.php"]
+    }
+}
